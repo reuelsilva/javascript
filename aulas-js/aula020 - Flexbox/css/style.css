@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    height: 200px;
+    background-color: springgreen;
+    border: 10px solid black;
+}
+
+#item-01{
+    width: 20%;
+    background-color: gold;
+}
+
+#item-02{
+    width: 50%;
+    background-color: rgb(252, 166, 180);
+}
+
+#item-03{
+    width: 30%;
+    background-color: red;
+}
+
+#item-04{
+    width: 50%;
+    background-color: darkorchid;
+}

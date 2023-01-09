@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <h1>Aprendendo JavaScript</h1>
+    <h2>Eventos</h2>
+    <div onmouseout="aoSair()" onmouseover="aoEntrar()" ondblclick="aoClicar2x()" onclick="aoClicar()" id="area">
+    </div>
+
+    <div id="painel">
+    <label for="campoTexto">Nome:
+        <input onfocus="aoFocar()" id="campoTexto" type="text" placeholder="digite aqui">
+    </label>
+   </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
