@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeeee;
+}
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    font-family: monospace;
+}
+
+header{
+    display: flex; /*HEADER CONTAINER FLEX*/
+    flex-flow: row wrap;
+    width: 50%;
+    margin: auto;
+    align-items: center;
+}
+
+input{
+    height: 120px;
+    flex:80%;
+    font-size: 2em;
+    padding-left: 10%;
+}
+
+button.add{
+    height: 120px;
+    flex: 20%;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+main{
+    margin: auto;
+    width: 50%;
+    margin-top: 40px;
+    /*OS FILHOS DIRETAMENTE DE MAIN NAO PEDIAM O COMPORTAMENTO INLINE
+        SOMENTE OS FILHOS DOS FILHOS DE MAIN QUE SAO AS 3 DIVS DENTRO DE UMA DIV
+    */
+}
+
+.item{
+    display: flex; /*É UM CONTAINER FLEX PARA SUAS 3 DIVS*/
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; /*CENTRALIZA (VERTICAL) NO MEIO*/
+    background-color: white;
+    height: 80px;
+    width: 100%; /*OCUPA 100% DA LARGURA DO ELEMENTO PAI (MAIN)*/
+    box-shadow: 0 0 20px #ccc;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.item.clicado{ /* O ELEMENTO QUE POSSUIR CLASSE class="item clicado" */
+    background-color: #d4f6d9;
+}
+
+.item.clicado .item-tarefa{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.item-icone{
+    flex: 20%;
+    text-align: center; /*CENTRALIZOU NA DIRECAO -> (HORIZONTAL)*/
+    font-size: 2em;
+    
+}
+
+.item-tarefa{
+    flex: 55%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.item-delete{
+    flex: 25%;
+}
+
+.delete{ /*CLASSE DO BOTAO DENTRO DE .ITEM-DELETE*/
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+}
+
+.mdi-check-circle{
+    color: green;
+}
