@@ -1,10 +1,10 @@
-let input = document.getElementById('inputTarefa');
+let input = document.getElementById('inputTarefa'); //CRIA REFERÊNCIA AO ELEMENTO HTML DE ID ESPECIFICADO
 let btnAdd = document.getElementById('btn-Add');
 let main = document.getElementById('areaLista');
 let contador = 0;
 
 function addTarefa(){
-    let valorInput = input.value; /*PEGOU O VALOR DO ELEMENTO INPUT*/
+    let valorInput = input.value; /*PEGA O VALOR DO ELEMENTO INPUT*/
     if((valorInput != '') && (valorInput != null) && (valorInput != undefined)){
         
         contador += 1;
@@ -23,8 +23,7 @@ function addTarefa(){
 
     main.innerHTML += novoItem;
     input.value = '';
-    console.log('teste')
-    input.focus();
+    input.focus(); //ELEMENTO INPUT CHAMA A FUNÇÃO FOCUS()
     }
 }
 
@@ -35,8 +34,8 @@ function marcarTarefa(id){
         item.classList.add('clicado');
 
         let icone = document.getElementById(`icone_${id}`);
-        icone.classList.remove('mdi-circle-outline');//REMOVE CLASSE
-        icone.classList.add('mdi-check-circle');//ADICIONA CLASSE
+        icone.classList.remove('mdi-circle-outline'); //REMOVE CLASSE
+        icone.classList.add('mdi-check-circle'); //ADICIONA CLASSE
 
         item.parentNode.appendChild(item);
     }else{
@@ -53,11 +52,9 @@ function deletar(id){
     item.remove();
 }
 
-//INPUT RESPONDER AO COMANDO DE PRESSIONAMENTO DE TECLA
+//ELEMENTO INPUT RECEBE OUVINTE DE EVENTO KEYUP
 input.addEventListener('keyup', function(event){
     if(event.keyCode == 13){
         btnAdd.click();
     }
 })
-
-
