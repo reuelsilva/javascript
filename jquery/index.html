@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        fieldset, input, button{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <p id="linha1">Aprendendo JQuery</p>
+    </fieldset>
+    <input type="text" name="" id="" value="Valor inicial"> <button>Clicar Aqui</button>
+
+
+    <fieldset>
+        <p id="linha2">Praticando JQuery</p>
+    </fieldset>
+
+    <script>
+        $(document).ready(function(){
+           $("button").click(function(){
+                $("#linha1").prepend(" ");
+                $("#linha1").prepend("Aprendendo");
+                $("#linha1").append(" ");
+                $("#linha1").append("JQuery")
+
+                $("input[type='text']").before("- antes -");
+                $("input[type='text']").after("- depois -");
+                $("input[value='Valor inicial']").val("Inserindo um novo valor")
+
+                $("#linha2").text("Programação Web")
+           })
+           /*
+            $(document).ready(function(){
+                $("button").click(function(){
+                    var txt = $("p");
+                    txt.css({color:'red'});
+                })
+            })
+           */
+        })
+    </script>
+</body>
+</html>

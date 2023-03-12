@@ -1,0 +1,12 @@
+
+----ACESSO A TODAS VERSÕES DO JQUERY-----
+
+https://releases.jquery.com/jquery/
+
+----ÚLTIMA VERSÃO DO JQUERY: JQUERY CORE 3.6.3----
+
+https://code.jquery.com/jquery-3.6.3.js
+
+--PARA SE APROFUNDAR EM MÉTODOS E EVENTOS JQUERY--
+
+https://learn.jquery.com/
