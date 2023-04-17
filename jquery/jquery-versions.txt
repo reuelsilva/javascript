@@ -3,9 +3,9 @@
 
 https://releases.jquery.com/jquery/
 
-----ÚLTIMA VERSÃO DO JQUERY: JQUERY CORE 3.6.3----
+----ÚLTIMA VERSÃO DO JQUERY: JQUERY CORE 3.6.4----
 
-https://code.jquery.com/jquery-3.6.3.js
+https://code.jquery.com/jquery-3.6.4.js
 
 --PARA SE APROFUNDAR EM MÉTODOS E EVENTOS JQUERY--
 
